@@ -1,0 +1,71 @@
+﻿<Window x:Class="Fat_Secret_MVVM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Fat_Secret_MVVM"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="0" Grid.Row="0" Content="&lt;-" Command="{Binding swipeback}"/>
+        <Button Grid.Column="8" Grid.Row="0" Content="->" Command="{Binding swipenext}"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" Grid.ColumnSpan="5" Text="{Binding str_date}"/>
+        <Button Grid.Column="0" Grid.Row="2" Content="{Binding date1}" Command="{Binding click1}"/>
+        <Button Grid.Column="1" Grid.Row="2" Content="{Binding date2}" Command="{Binding click2}"/>
+        <Button Grid.Column="2" Grid.Row="2" Content="{Binding date3}" Command="{Binding click3}"/>
+        <Button Grid.Column="3" Grid.Row="2" Content="{Binding date4}" Command="{Binding click4}"/>
+        <Button Grid.Column="4" Grid.Row="2" Content="{Binding date5}" Command="{Binding click5}"/>
+        <Button Grid.Column="5" Grid.Row="2" Content="{Binding date6}" Command="{Binding click6}"/>
+        <Button Grid.Column="6" Grid.Row="2" Content="{Binding date7}" Command="{Binding click7}"/>
+        <Button Grid.Column="7" Grid.Row="2" Content="{Binding date8}" Command="{Binding click8}"/>
+        <Button Grid.Column="8" Grid.Row="2" Content="{Binding date9}" Command="{Binding click9}"/>
+
+        <Button Grid.Column="0" Grid.Row="3" Content="{Binding date10}" Command="{Binding click10}"/>
+        <Button Grid.Column="1" Grid.Row="3" Content="{Binding date11}" Command="{Binding click11}"/>
+        <Button Grid.Column="2" Grid.Row="3" Content="{Binding date12}" Command="{Binding click12}"/>
+        <Button Grid.Column="3" Grid.Row="3" Content="{Binding date13}" Command="{Binding click13}"/>
+        <Button Grid.Column="4" Grid.Row="3" Content="{Binding date14}" Command="{Binding click14}"/>
+        <Button Grid.Column="5" Grid.Row="3" Content="{Binding date15}" Command="{Binding click15}"/>
+        <Button Grid.Column="6" Grid.Row="3" Content="{Binding date16}" Command="{Binding click16}"/>
+        <Button Grid.Column="7" Grid.Row="3" Content="{Binding date17}" Command="{Binding click17}"/>
+        <Button Grid.Column="8" Grid.Row="3" Content="{Binding date18}" Command="{Binding click18}"/>
+
+        <Button Grid.Column="0" Grid.Row="4" Content="{Binding date19}" Command="{Binding click19}"/>
+        <Button Grid.Column="1" Grid.Row="4" Content="{Binding date20}" Command="{Binding click20}"/>
+        <Button Grid.Column="2" Grid.Row="4" Content="{Binding date21}" Command="{Binding click21}"/>
+        <Button Grid.Column="3" Grid.Row="4" Content="{Binding date22}" Command="{Binding click22}"/>
+        <Button Grid.Column="4" Grid.Row="4" Content="{Binding date23}" Command="{Binding click23}"/>
+        <Button Grid.Column="5" Grid.Row="4" Content="{Binding date24}" Command="{Binding click24}"/>
+        <Button Grid.Column="6" Grid.Row="4" Content="{Binding date25}" Command="{Binding click25}"/>
+        <Button Grid.Column="7" Grid.Row="4" Content="{Binding date26}" Command="{Binding click26}"/>
+        <Button Grid.Column="8" Grid.Row="4" Content="{Binding date27}" Command="{Binding click27}"/>
+
+        <Button Grid.Column="0" Grid.Row="5" Content="{Binding date28}" Command="{Binding click28}"/>
+        <Button Grid.Column="1" Grid.Row="5" Visibility="{Binding notshow2}" Content="{Binding date29}" Command="{Binding click29}"/>
+        <Button Grid.Column="2" Grid.Row="5" Visibility="{Binding notshow3}" Content="{Binding date30}" Command="{Binding click30}"/>
+        <Button Grid.Column="3" Grid.Row="5" Visibility="{Binding notshow1}" Content="{Binding date31}" Command="{Binding click31}"/>
+        <Button Grid.Column="6" Content="Статистика" Grid.Row="0" Grid.ColumnSpan="2" Command="{Binding stat}"/>
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="8" Grid.Row="4"/>
+
+    </Grid>
+</Window>
