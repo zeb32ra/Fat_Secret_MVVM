@@ -12,6 +12,7 @@ namespace Fat_Secret_MVVM.ViewModel
 {
     internal class StatisticWindow : BindingHelper
     {
+
         #region Commands
         public BindableCommand bc { get;set; }
         #endregion
@@ -23,7 +24,6 @@ namespace Fat_Secret_MVVM.ViewModel
         public int zhiri { get; set; }
         public string result { get;set;}
         #endregion
-
 
         public StatisticWindow()
         {

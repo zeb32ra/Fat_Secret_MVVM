@@ -23,7 +23,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Button Grid.Column="0" Grid.Row="0" Content="Exit" Command="{Binding cl_back}"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" FontSize="38" Text="{Binding str_date}"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" FontSize="38" Text="{Binding str_date}" Foreground="#FFDF0BF6"/>
         <CheckBox HorizontalAlignment="Center" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Content="{Binding check1_num}" Command="{Binding ch1}" IsChecked="{Binding isch1}"/>
         <CheckBox HorizontalAlignment="Center" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Content="{Binding check2_num}" Command="{Binding ch2}" IsChecked="{Binding isch2}"/>
         <CheckBox HorizontalAlignment="Center" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Content="{Binding check3_num}" Command="{Binding ch3}" IsChecked="{Binding isch3}"/>
